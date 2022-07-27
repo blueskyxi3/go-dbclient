@@ -10,10 +10,10 @@ https://github.com/sijms/go-ora
 
 ## 1 dev
 ```shell
- go run .\cmd\main.go -server oracle://cdrdev:cdr@192.168.199.177:1522/cdrtest -sql "select * from dual"
- go run .\cmd\main.go -server oracle://cdrdev:cdr@192.168.199.177:1522/cdrtest -sql "CREATE TABLE VIN_DEPT_ZW(EPTNO NUMBER(2) CONSTRAINT PK_DEPT PRIMARY KEY, DNAME VARCHAR2(14))"
+ go run .\cmd\main.go -server oracle://xx:xx@192.168.199.177:1522/cdrtest -sql "select * from dual"
+ go run .\cmd\main.go -server oracle://xx:xx@192.168.199.177:1522/cdrtest -sql "CREATE TABLE VIN_DEPT_ZW(EPTNO NUMBER(2) CONSTRAINT PK_DEPT PRIMARY KEY, DNAME VARCHAR2(14))"
  
- PS D:\code\go\go-oraclient> go run .\cmd\main.go -server oracle://xx:xx@192.168.199.177:1522/cdrtest -sql "insert into VIN_DEPT_ZW(EPTNO,Dname) values (3,'vincentzou')"
+go run .\cmd\main.go -server oracle://xx:xx@192.168.199.177:1522/cdrtest -sql "insert into VIN_DEPT_ZW(EPTNO,Dname) values (3,'vincentzou')"
 Connection string:  oracle://xx:xx@192.168.100.177:1522/cdrtest
 execute sql:  insert into VIN_DEPT_ZW(EPTNO,Dname) values (3,'vincentzou')
 affected result: 1
